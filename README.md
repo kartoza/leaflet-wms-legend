@@ -6,7 +6,7 @@ WMS GetLegendGraphic request result in a legend. At the moment the plugin is
 pass it on initialisation. However that is enough to create a nice looking 
 legend on your map like this:
 
-
+![Legend Example](https://raw.githubusercontent.com/kartoza/leaflet-wms-legend/master/example.png)
 
 To use it simply include the supplied javascript and css files (make sure the 
 js file comes after the main leaflet js file):
