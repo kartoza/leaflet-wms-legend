@@ -8,6 +8,9 @@ legend on your map like this:
 
 ![Legend Example](https://raw.githubusercontent.com/kartoza/leaflet-wms-legend/master/example.png)
 
+
+## Usage
+
 To use it simply include the supplied javascript and css files (make sure the 
 js file comes after the main leaflet js file):
 
@@ -24,7 +27,19 @@ L.wmsLegend(uri);
 
 ```
 
-For a complete example, please see example.html in the source tree.
+## Demos
+
+For a complete example, please see example.html in the source tree. You can also
+visit (http://maps.kartoza.com)[http://maps.kartoza.com] as various of our 
+demos there use the legend control provided here.
+
+## License
+
+MIT License - see LICENSE.txt provided in the source
+
+## Requirements
+
+Works with leaflet 0.7.3 - may work with older version (untested by the author).
 
 Tim Sutton
 August 2014
