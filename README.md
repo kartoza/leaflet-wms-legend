@@ -41,5 +41,8 @@ MIT License - see LICENSE.txt provided in the source
 
 Works with leaflet 0.7.3 - may work with older version (untested by the author).
 
-Tim Sutton
+# Author
+
+Tim Sutton (tim@kartoza.com)
+
 August 2014
