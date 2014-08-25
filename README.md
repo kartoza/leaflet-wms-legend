@@ -32,9 +32,9 @@ L.wmsLegend(uri);
 
 ## Demos
 
-For a complete example, please see example.html in the source tree. You can also
-visit (http://maps.kartoza.com)[http://maps.kartoza.com] as various of our 
-demos there use the legend control provided here.
+For a complete example, please see example.html in the source tree. You can
+also visit http://maps.kartoza.com as various of our demos there use the legend
+control provided here.
 
 ## License
 
