@@ -24,6 +24,7 @@ L.Control.WMSLegend = L.Control.extend({
             .on(this.img, 'dblclick', stop)
             .on(this.img, 'click', L.DomEvent.preventDefault)
             .on(this.img, 'click', stop);
+
         return this.container;
     },
     _click: function (e) {
@@ -33,13 +34,16 @@ L.Control.WMSLegend = L.Control.extend({
         var style = window.getComputedStyle(this.img);
         if (style.display === 'none')
         {
-            this.container.style.height = '';
-            this.container.style.width = '';
-            this.img.style.visibility = "visible";
+            this.container.style.height = this.height + 'px';
+            this.container.style.width = this.width + 'px';
+            this.img.style.display = this.displayStyle;
         }
         else
         {
-            this.img.style.visibility = "hidden";
+            this.height = this.container.offsetHeight;
+            this.width = this.container.offsetWidth;
+            this.displayStyle = this.img.style.display;
+            this.img.style.display = 'none';
             this.container.style.height = '20px';
             this.container.style.width = '20px';
         }
