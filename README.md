@@ -26,7 +26,7 @@ uri = "http://maps.kartoza.com/cgi-bin/qgis_mapserv.fcgi?";
 uri += "map=/web/Boosmansbos/Boosmansbos.qgs&";
 uri += "&SERVICE=WMS&VERSION=1.3.0&SLD_VERSION=1.1.0&";
 uri += "REQUEST=GetLegendGraphic&FORMAT=image/jpeg&LAYER=Boosmansbos&STYLE=";
-L.wmsLegend(uri);
+L.wmsLegend(uri, mapName);
 
 ```
 
