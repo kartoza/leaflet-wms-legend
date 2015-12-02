@@ -14,7 +14,7 @@ L.Control.WMSLegend = L.Control.extend({
             stop = L.DomEvent.stopPropagation;
         this.container = L.DomUtil.create('div', controlClassName);
         this.img = L.DomUtil.create('img', legendClassName, this.container);
-        this.img.src = uri;
+        this.img.src = this.options.uri;
         this.img.alt = 'Legend';
 
         L.DomEvent
