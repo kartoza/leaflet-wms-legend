@@ -47,15 +47,15 @@ L.Control.WMSLegend = L.Control.extend({
             }
             this.displayStyle = this.img.style.display;
             this.img.style.display = 'none';
-            this.container.style.height = '20px';
-            this.container.style.width = '20px';
+            this.container.style.height = '30px';
+            this.container.style.width = '30px';
         }
     },
 });
 
-L.wmsLegend = function (uri) {
+L.wmsLegend = function (uri, mapName) {
     var wmsLegendControl = new L.Control.WMSLegend;
     wmsLegendControl.options.uri = uri;
-    map.addControl(wmsLegendControl);
+    mapName.addControl(wmsLegendControl);
     return wmsLegendControl;
 };

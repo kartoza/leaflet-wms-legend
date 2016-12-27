@@ -1,5 +1,8 @@
 .leaflet-control-wms-legend
 {
+    background-image: url(/css/ic_info_outline_grey600_24dp.png);
+    background-repeat: no-repeat;
+    background-position: center; 
     display: block;
     padding: 3px;
     border-radius: 4px;
@@ -13,5 +16,5 @@
 
 .leaflet-control-wms-legend:hover
 {
-    background-color: #F4F4F4;
+    background-color: #FFFFFF;
 }
