@@ -51,6 +51,11 @@ L.Control.WMSLegend = L.Control.extend({
             this.container.style.width = '20px';
         }
     },
+
+    update: function(uri) {
+        this.options.uri = uri;
+        this.img.src = this.options.uri;
+    }
 });
 
 L.wmsLegend = function (uri) {
