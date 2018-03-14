@@ -34,9 +34,8 @@ L.Control.WMSLegend = L.Control.extend({
         // toggle legend visibility
         var style = window.getComputedStyle(this.img);
         if (style.display === 'none') {
-            this.container.style.height = this.height + 'px';
-            this.container.style.width = this.width + 'px';
             this.img.style.display = this.displayStyle;
+            L.DomUtil.removeClass(this.container, 'wms-legend-collapsed');
         }
         else {
             if (this.width === null && this.height === null) {
@@ -47,8 +46,7 @@ L.Control.WMSLegend = L.Control.extend({
             }
             this.displayStyle = this.img.style.display;
             this.img.style.display = 'none';
-            this.container.style.height = '20px';
-            this.container.style.width = '20px';
+            L.DomUtil.addClass(this.container, 'wms-legend-collapsed');
         }
     },
 
